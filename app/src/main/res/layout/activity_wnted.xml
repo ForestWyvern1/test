@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WntedActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#177D89">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/arrowback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/arrowback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wanted"
+                android:textColor="#FFF"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right|center"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginEnd="24dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/oleg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:paddingStart="14dp"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chq"
+            style="@style/StyleCheckBox"
+            android:buttonTint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/lopuhov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/userpic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Lopuhov Oleg Viktorovich"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070" />
+
+    <LinearLayout
+        android:id="@+id/egor"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingStart="14dp"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chw"
+            style="@style/StyleCheckBox"
+            android:buttonTint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/kraev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/uerpicq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Kraev Egor Sergeevich"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070" />
+
+    <LinearLayout
+        android:id="@+id/ali"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingStart="14dp"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <CheckBox
+            android:id="@+id/che"
+            style="@style/StyleCheckBox"
+            android:buttonTint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/mudjipov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/userpicw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Mudjipov Ali"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070" />
+
+
+    <LinearLayout
+        android:id="@+id/daniil"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingStart="14dp"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chr"
+            style="@style/StyleCheckBox"
+            android:buttonTint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/manko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/userpice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Manko Daniil Vladimirovich"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"/>
+    
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/frame"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="#ECEFF1">
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="170dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="#177D89"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="#FFF"/>
+        
+    </FrameLayout>
+
+    
+</FrameLayout>

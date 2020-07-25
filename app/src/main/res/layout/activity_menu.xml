@@ -17,6 +17,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:background="?selectableItemBackgroundBorderless"
                 android:id="@+id/arrowback_menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,12 +36,44 @@
     </androidx.appcompat.widget.Toolbar>
 
     <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#707070"
+        android:layout_marginTop="35dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/criminal"
+        android:background="?selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shield"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Criminal cases"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="35dp"
         android:background="#707070" />
 
     <LinearLayout
+        android:background="?selectableItemBackground"
+        android:id="@+id/departmens"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:orientation="horizontal">
@@ -50,13 +83,13 @@
             android:layout_height="48dp"
             android:layout_marginStart="14dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/shield" />
+            android:src="@drawable/shieldq" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="14dp"
+            android:layout_gravity="center"
             android:text="Departments"
             android:textColor="#000"
             android:textSize="18sp" />
@@ -69,8 +102,10 @@
         android:background="#707070" />
 
     <LinearLayout
+        android:id="@+id/wanted"
+        android:background="?selectableItemBackground"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -84,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
             android:text="Wanted"
             android:textColor="#000"
             android:textSize="18sp" />
@@ -94,7 +129,36 @@
     <View
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
+        android:background="#707070" />
+
+    <LinearLayout
+        android:background="?selectableItemBackground"
+        android:id="@+id/paintb"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/lupa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="Detectives"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
         android:background="#707070" />
 
     <LinearLayout
@@ -115,37 +179,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="14dp"
+            android:layout_gravity="center"
             android:text="PhotoRobot"
-            android:textColor="#000"
-            android:textSize="18sp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="#707070" />
-
-    <LinearLayout
-        android:id="@+id/paintb"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/pen" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="14dp"
-            android:text="Paint"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -180,7 +215,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="14dp"
+            android:layout_gravity="center"
             android:text="About Us"
             android:textColor="#000"
             android:textSize="18sp" />
@@ -191,5 +226,35 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#707070" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/logout"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/shieldw"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:text="Log out"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
 
 </LinearLayout>

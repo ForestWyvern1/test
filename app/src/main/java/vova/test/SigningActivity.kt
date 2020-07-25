@@ -29,4 +29,7 @@ class SigningActivity : AppCompatActivity() {
         startActivity (Intent(this, MenuActivity::class.java))
     }
 
+    override fun onBackPressed() {
+        finishAffinity()
+    }
 }

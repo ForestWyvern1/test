@@ -12,6 +12,9 @@ class NewphotoActivity : AppCompatActivity() {
         arrowback.setOnClickListener {
             super.onBackPressed()
         }
+        share.setOnClickListener {
+
+        }
     }
 }
 
