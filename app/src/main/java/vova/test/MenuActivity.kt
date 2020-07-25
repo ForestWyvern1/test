@@ -10,6 +10,14 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
+        departmens.setOnClickListener {
+
+        }
+
+        wanted.setOnClickListener {
+
+        }
+
         arrowback_menu.setOnClickListener {
             super.onBackPressed()
         }
@@ -23,6 +31,34 @@ class MenuActivity : AppCompatActivity() {
             toKartinochki()
         }
 
+        paintb.setOnClickListener {
+
+        }
+
+        criminal.setOnClickListener {
+
+        }
+
+        wanted.setOnClickListener {
+            toWnted()
+        }
+
+        logout.setOnClickListener {
+            toSignning()
+        }
+
+    }
+
+    fun toSignning(){
+        startActivity(Intent(this, SigningActivity::class.java))
+    }
+
+    fun toWnted(){
+        startActivity(Intent(this, WntedActivity::class.java))
+    }
+
+    fun toPaint(){
+        startActivity(Intent(this, PaintActivity::class.java))
     }
 
     fun toKartinochki(){

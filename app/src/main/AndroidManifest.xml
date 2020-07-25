@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".NewphotoActivity"></activity>
+        <activity android:name=".DepartmensActivity"></activity>
+        <activity android:name=".WntedActivity"></activity>
+        <activity android:name=".NewphotoActivity" />
         <activity android:name=".SigningActivity" />
         <activity android:name=".PaintActivity" />
         <activity

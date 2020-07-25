@@ -13,12 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         double_arrow.setOnClickListener {
-            toKartinochki()
+            super.onBackPressed()
+        }
         }
     }
-
-
-    fun toKartinochki(){
-        startActivity(Intent(this, KartinochkiActivity::class.java))
-    }
-}

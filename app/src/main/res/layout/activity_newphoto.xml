@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp">
             <ImageView
+                android:background="?selectableItemBackgroundBorderless"
                 android:id="@+id/arrowback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -30,6 +31,8 @@
                 android:textSize="22sp"
                 android:layout_gravity="center"/>
             <ImageView
+                android:id="@+id/share"
+                android:background="?selectableItemBackgroundBorderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/share"
