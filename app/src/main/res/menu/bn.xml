@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/smokeone"
+        android:icon="@drawable/smoke"
+        android:title="smokeone"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/smoketwo"
+        android:icon="@drawable/smokeplus"
+        android:title="smoketwo"
+        app:showAsAction="always"/>
+
+
+</menu>

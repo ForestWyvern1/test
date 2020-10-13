@@ -24,6 +24,12 @@ class RVAdapter : RecyclerView.Adapter<RVAdapter.AdapterView>(){
 
     override fun onBindViewHolder(holder: AdapterView, position: Int) {
         holder.itemView.text.text = list[position]
+        holder.itemView.card.setOnClickListener {
+           toFuk()
+        }
+    }
+    fun toFuk(){
+
     }
 
     class AdapterView (view: View) : RecyclerView.ViewHolder(view){
